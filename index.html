@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.css">
+        
+    </head>
+    <body>
+        <header class="header">
+	<div class="header__inner js-header-nav">
+		<div class="header__item">
+			<div class="header__logo">
+				<a href="/">
+					<img src="./img/content-v0.1/logo1.png" alt="Logo">
+				</a>
+			</div>
+			<!-- <p class="header__title">АВТОРУСЬ Силикатная <br>
+				официальный дилер Exeed</p> -->
+			<div class="header__anchors js-header-anchor">
+				<a href="./model-lx.html" class="active">lx</a>
+				<a href="./model-txl.html" class="">txl</a>
+				<a href="./model-txl.html">vx</a>
+				<a href="#">о бренде</a>
+				<a href="#">стать дилером</a>
+			</div>
+			<div class="header__burger js-header-burger">
+				<img src="./img/svg/burger2.svg" alt="Icon">
+			</div>
+		</div>
+		<div class="header__item">
+			<!-- <div class="header__contacts">
+				<a href="tel:+74952761234" class="header__contacts-item">
+					<span>+7 (495) 276-12-34</span>
+				</a>
+			</div> -->
+			<div class="header__icons">
+				<a href="#contacts" class="header__icons-item">
+					<span>найти дилера</span>
+					<svg>
+						<use xlink:href="./img/sprites/sprite.svg#map-pin"></use>
+					</svg>
+				</a>
+
+				<a href="#contacts" class="header__icons-item">
+					<svg class="header__icons-user">
+						<use xlink:href="./img/sprites/sprite.svg#user"></use>
+					</svg>
+				</a>
+			</div>
+
+			<button class="header__call btn">получить предложение</button>
+		</div>
+	</div>
+	<div class="header__inner header__inner_nav container js-header-nav">
+		<div class="header__logo">
+			<a href="/">
+				<img src="./img/content-v0.1/logo1.png" alt="Logo">
+			</a>
+			<button class="header__close js-header-close">
+				<img src="./img/svg/hclose.svg" alt="Icon">
+			</button>
+		</div>
+		<div class="header__nav">
+			<a href="./model-txl.html">CHERYEXEED TXL</a>
+			<a href="./model-vx.html">CHERYEXEED VX</a>
+			<a href="#benefits">Наши преимущества</a>
+			<a href="#contacts">Контакты</a>
+			<a href="#instagram">Мы в Инстраграмм</a>
+			<a href="#comment">Отзывы</a>
+		</div>
+		<div class="header__menu">
+			<p class="header__menu-title">АВТОРУСЬ Силикатная</p>
+			<p class="header__menu-text">официальный дилер EXEED</p>
+		</div>
+		<div class="header__contacts">
+			<p class="header__contacts-item">
+				<img class="header__icon" src="./img/svg/map-pin2.svg" alt="Call">
+				<span>Тверь, Калининский район,<br> Бурашевское сельское поселение,<br> пром. зона Боровлево-1, стр.
+					3</span>
+			</p>
+			<a href="tel:+74952761234" class="header__contacts-item">
+				<img class="header__icon" src="./img/svg/call2.svg" alt="Call">
+				<span>+7 (495) 276-12-34</span>
+			</a>
+		</div>
+	</div>
+</header>
+
+    
+    <div class="main">
+        <div class="sidebar js-sidebar">
+    <ul>
+        <li class="js-sidebar-link sidebar__link"><a href="#characters">Характеристики</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#design">Дизайн</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#comfort">стиль и комфорт</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#security">Безопасность</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#dynamics">динамика</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#technology">технологии</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#">тест-драйв</a></li>
+        <li class="js-sidebar-link sidebar__link"><a href="#">комплектации и цены</a></li>
+    </ul>
+</div>
+
+        <div class="intro intro_lx js-not-webp">
+    <div class="container intro__content">
+        <h1 class="intro__title">EXEED LX</h1>
+        <div class="intro__cost">от 3 390 000 ₽*</div>
+        <div class="intro__button">
+            <button class="btn intro__btn js-popup-link" data-mfp-src="#test-drive">
+                <span>узнать больше</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="anchor intro__anchor">
+            <a href="#exeed">
+                <svg class="bounce">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-dw"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <section class="video-lx" id="exeed">
+    <div class="video-lx__content container">
+        <div class="video-lx__logo">
+            <img src="./img/lx/logo.png" alt="EXEED">
+        </div>
+        <div class="video-lx__text">
+            <p>Мы приходим в этот мир, чтобы сделать его лучше. Мы познаем и учимся, чтобы создавать прекрасное. Мы 
+                хотим оставить свой след. Но для этого нам самим необходимы источники вдохновения. Встречайте новый внедорожник Exeed LX. Вашу персональную музу. Собственную вселенную.</p>
+        </div>
+        <div class="video-lx__btn">
+            <button class="video-lx__play">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#video-play"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="video-lx__title">
+            <h2>exeed lx: премьера <br> в россии</h2>
+        </div>
+        <div class="video-lx__date">
+            <p>17 марта, 14:00</p>
+        </div>
+        <div class="anchor video-lx__arrow">
+            <a href="#characters">
+                <p>exeed vx</p>
+                <svg class="bounce">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-dw"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+        <section class="lx-slide js-lx-slide">
+    <section class="lx-slide__block lx-slide__block_first" id="characters">
+  <div class="container lx-slide__wrap">
+    <div class="lx-slide__years">
+      <img src="./img/lx/years.png" alt="" />
+    </div>
+    <div class="lx-slide__avail">
+      <div class="lx-slide__avail-item">
+        <div class="lx-slide__avail-icon">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#m-icon1"></use>
+          </svg>
+        </div>
+        <div class="lx-slide__avail-numb">147</div>
+        <div class="lx-slide__avail-text">Мощность, л.с.</div>
+      </div>
+      <div class="lx-slide__avail-item">
+        <div class="lx-slide__avail-icon">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#m-icon2"></use>
+          </svg>
+        </div>
+        <div class="lx-slide__avail-numb">210</div>
+        <div class="lx-slide__avail-text">Крутящий момент, нм</div>
+      </div>
+      <div class="lx-slide__avail-item">
+        <div class="lx-slide__avail-icon">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#m-icon3"></use>
+          </svg>
+        </div>
+        <div class="lx-slide__avail-numb">10,5</div>
+        <div class="lx-slide__avail-text">Разгон до 100 км/ч, с</div>
+      </div>
+      <div class="lx-slide__avail-item">
+        <div class="lx-slide__avail-icon">
+          <svg>
+            <use xlink:href="./img/sprites/sprite.svg#m-icon4"></use>
+          </svg>
+        </div>
+        <div class="lx-slide__avail-numb">8</div>
+        <div class="lx-slide__avail-text">Расход топлива, л</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="lx-slide__block lx-slide__block_second" id="design">
+    <div class="lx-slide__inner">
+        <div class="lx-slide__content">
+            <h2 class="lx-slide__title">Яркий дизайн</h2>
+            <p class="lx-slide__text">
+                Выделяться из толпы совсем непросто, но результат того
+                стоит. Вы и сами это прекрасно знаете.
+                Как и команда художников, создававшая LX. В экстерьере  нового внедорожника 
+                фамильные черты EXEED органично  сочетаются со свежими дизайнерскими решениями.
+                Броский дизайн и инновационный  язык форм формирует дерзкий и  уверенный образ 
+                нового LX. Для тех, кто рожден чтобы делать  больше.
+            </p>
+            <button class="lx-slide__btn js-popup-link" data-mfp-src="#modal-design">
+                <span>в деталях</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <section class="lx-slide__block lx-slide__block_third" id="comfort">
+    <div class="lx-slide__inner">
+        <div class="lx-slide__content">
+            <h2 class="lx-slide__title">Стиль <br>и комфорт</h2>
+            <p class="lx-slide__text">
+                Современный темп жизни диктует свои правила:
+                в попытках все успеть, мы окружаем себя лишь самым  необходимым.
+                Отказываемся от лишнего. Проникаемся философией  разумного потребления.
+                И новый Exeed LX – как раз про это.
+                Обладая компактными габаритами, этот премиальный  внедорожник вобрал в себя все самые современные  технологии и опции.
+                Куда бы вы ни отправились, он сделает вашу жизнь еще  приятнее. Еще ярче. И еще проще.
+            </p>
+            <button class="lx-slide__btn js-popup-link" data-mfp-src="#modal-comfort">
+                <span>в деталях</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <section class="lx-slide__block lx-slide__block_fourth" id="security">
+    <div class="lx-slide__inner">
+        <div class="lx-slide__content">
+            <h2 class="lx-slide__title">Системы безопасности</h2>
+            <p class="lx-slide__text">
+                Комплекс систем активной и пассивной безопасности  поможет на дороге.
+                И сделают каждую Вашу поездку  спокойной.
+            </p>
+            <button class="lx-slide__btn js-popup-link" data-mfp-src="#modal-safety">
+                <span>в деталях</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <section class="lx-slide__block lx-slide__block_fifth" id="dynamics">
+    <div class="lx-slide__inner">
+        <div class="lx-slide__content">
+            <h2 class="lx-slide__title">Динамика</h2>
+            <p class="lx-slide__text">
+                Стильная внешность и качественный интерьер с множеством передовых опций – лишь вершина айсберга. 
+                Современный двигатель, трансмиссия и подвеска словно созданы для людей, легких на подъем. В любой поездке по любым
+                дорогам вы непременно оцените превосходную динамику нового EXEED LX.
+            </p>
+            <button class="lx-slide__btn js-popup-link" data-mfp-src="#modal-dynamic">
+                <span>в деталях</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <section class="lx-slide__block lx-slide__block_sixth" id="technology">
+    <div class="lx-slide__inner">
+        <div class="lx-slide__content">
+            <h2 class="lx-slide__title">Современные технологии</h2>
+            <p class="lx-slide__text">
+                Компактный – не значит простой. В роскошном и одновременно лаконичном интерьере EXEED LX вы найдете множество ультрасовременных решений и опций, успевших стать визитной карточкой бренда. 
+                Это фирменный мультимедийный кластер из двух 12,3-дюймовых дисплеев высочайшего разрешения, 
+                сенсорная панель управления раздельным климат-контролем, и встроенный видеорегистратор.
+                Стоит ли говорить о таких «мелочах», как беспроводная зарядка для гаджетов или функция бесключевого доступа? <br>
+                Для автомобилей EXEED они давно стали нормой. 
+
+            </p>
+            <button class="lx-slide__btn js-popup-link" data-mfp-src="#modal-technology">
+                <span>в деталях</span>
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+</section>
+
+        <div class="test-auto test-auto_lx">
+    <div class="container test-auto__container">
+        <div class="test-auto__inner test-auto__inner_model">
+            <h2 class="test-auto__title">пройдите<br>тест-драйв</h2>
+            <p class="test-auto__text">
+                Попробуйте новый полноразмерный внедорожник EXEED LX в деле! Запишитесь на 
+                пробную поездку в ближайший официальный дилерский центр и получите персональное 
+                предложение на покупку на особых условиях.
+            </p>
+            <button class="benefits__btn btn js-popup-link" data-mfp-src="#test-drive">
+                <span>запись на тест-драйв</span>
+                <img src="./img/svg/arrow-dw.svg" alt="Icon">
+            </button>
+        </div>
+        <div class="anchor test-auto__anchor">
+            <a href="#exeed">
+                <svg class="bounce">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-dw"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <div class="auto-stock auto-stock_lx" id="cheryexeed">
+    <div class="container">
+        <div class="auto-stock__flex">
+            <div class="auto-stock__flex-item" id="@@id">
+                <h2 class="auto-stock__name">exeed Lx luxury</h2>
+                <div class="auto-stock__img">
+                    <picture>
+                        <img src="./img/lx/lx-model.jpg" alt="Exeed" loading="lazy" width="100" height="100">
+                    </picture>
+                </div>
+                <p class="auto-stock__price">от 3 069 900 ₽*</p>
+            </div>
+            <div class="auto-stock__flex-item" id="@@id">
+                <h2 class="auto-stock__name">exeed Lx Prestige</h2>
+                <div class="auto-stock__img">
+                    <picture>
+                        <img src="./img/lx/lx-model.jpg" alt="Exeed" loading="lazy" width="100" height="100">
+                    </picture>
+                </div>
+                <p class="auto-stock__price">от 3 369 900 ₽*</p>
+            </div>
+        </div>
+        <div class="auto-stock__bottom">
+            <div class="auto-stock__btn">
+                <button class="btn btn_second js-popup-link" data-mfp-src="#back-call">
+                    <span>Узнать больше</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="auto-stock__btn">
+                <button class="btn btn_second auto-stock__btn-white js-popup-link" data-mfp-src="#back-call">
+                    <span>Обратный звонок</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <p class="auto-stock__addon">* Максимальная цена перепродажи с учетом маркетинговых акций. Не оферта. Подробности уточняйте у официальных дилеров ЭКСИД.</p>
+    </div>
+</div>
+
+    </div>
+
+        <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer-top">
+    <div class="footer-top__left">
+        <div class="footer__logo">
+            <a href="/">
+                <img src="./img/content-v0.1/logo1.png" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div class="footer-top__nav">
+        <a href="./model-txl.html">lx</a>
+        <a href="./model-txl.html">txl fl</a>
+        <a href="./model-txl.html">vx</a>
+        <a href="/">о бренде</a>
+        <a href="/">найти дилера</a>
+        <a href="/">личный кабинет</a>
+        <a href="#get-offer" class="js-popup-link">получить предложение</a>
+        <a href="/">Стать дилером</a>
+    </div>
+</div>
+        
+        <div class="footer-center">
+    <div class="footer-center__left">
+        <div class="footer-center__tel">
+            <p class="footer-center__text">Горячая линия (круглосуточно)</p>
+            <a href="tel:88007008003">8 800 700-800-3</a>
+        </div>
+        <div class="footer-center__tel">
+            <p class="footer-center__text">С мобильного телефона</p>
+            <a href="tel:+73113142112">+7 (311) 314-21-12</a>
+        </div>
+    </div>
+    <div class="footer-social">
+        <a href="/" target="_blank">
+            <svg>
+                <use xlink:href="./img/sprites/sprite.svg#inst"></use>
+            </svg>
+        </a>
+        <a href="/" target="_blank">
+            <svg>
+                <use xlink:href="./img/sprites/sprite.svg#vk"></use>
+            </svg>
+        </a>
+        <a href="/" target="_blank">
+            <svg>
+                <use xlink:href="./img/sprites/sprite.svg#fb"></use>
+            </svg>
+        </a>
+        <a href="/" target="_blank">
+            <svg>
+                <use xlink:href="./img/sprites/sprite.svg#yt"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+        <div class="footer-bottom">
+    <div class="footer-bottom__left">
+        <p>© 2022 АВТОРУСЬ Силикатная ОФИЦИАЛЬНЫЙ ДИЛЕР EXEED</p>
+        <a href="/information.pdf" target="_blank">Юридическая информация</a>
+    </div>
+    <a href="/" target="_blank">
+        Сделано в <strong>4px</strong>
+    </a>
+</div>
+    </div>
+</footer>
+        
+        <link rel="stylesheet" href="./libs/magnific/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css"/>
+
+        <script type="text/javascript" src="./libs/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="./libs/maskedinput.min.js"></script>
+        <script src="./libs/magnific/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=28517946-dbf1-42a5-9b36-08632da36a93&lang=ru_RU&" type="text/javascript"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+
+<div class="modal" id="get-offer">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+        <img src="./img/content-v0.1/logo1.png" alt="Logo" class="modal__logo">
+        <h3 class="modal__title">Получите предложение!</h3>
+        <p class="modal__text">Оставьте свой номер, и мы перезвоним вам</p>
+
+        <form class="form form_modal js-form" data-action="https://jsonplaceholder.typicode.com/users">
+            <div class="form__box">
+                <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
+                    class="form__input js-form-input">
+            </div>
+            <div class="form__box">
+                <button class="btn js-form-btn">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Получить</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="form__error">Это обязательное поле</div>
+        </form>
+
+        <p class="modal__policy">
+            Я ознакомился и согласен с <a href="/policy.pdf" target="_blank">политикой обработки персональных данных</a>
+        </p>
+    </div>
+</div>
+
+<div class="modal" id="learn-more">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+        <img src="./img/content-v0.1/logo1.png" alt="Logo" class="modal__logo">
+        <h3 class="modal__title">Узнать больше!</h3>
+        <p class="modal__text">Оставьте свой номер, и мы перезвоним вам</p>
+
+        <form class="form form_modal js-form" data-action="https://jsonplaceholder.typicode.com/users">
+            <div class="form__box">
+                <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
+                    class="form__input js-form-input">
+            </div>
+            <div class="form__box">
+                <button class="btn js-form-btn">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Отправить</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="form__error">Это обязательное поле</div>
+        </form>
+
+        <p class="modal__policy">
+            Я ознакомился и согласен с <a href="/policy.pdf" target="_blank">политикой обработки персональных данных</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="modal" id="test-drive">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+        <img src="./img/content-v0.1/logo1.png" alt="Logo" class="modal__logo">
+        <h3 class="modal__title">Записаться на тест драйв</h3>
+        <p class="modal__text">Оставьте свой номер, и мы перезвоним вам</p>
+
+        <form class="form form_modal js-form" data-action="https://jsonplaceholder.typicode.com/users">
+            <div class="form__box">
+                <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
+                    class="form__input js-form-input">
+            </div>
+            <div class="form__box">
+                <button class="btn js-form-btn">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Записаться</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="form__error">Это обязательное поле</div>
+        </form>
+
+        <p class="modal__policy">
+            Я ознакомился и согласен с <a href="/policy.pdf" target="_blank">политикой обработки персональных данных</a>
+        </p>
+    </div>
+</div>
+
+<div class="modal" id="back-call">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+        <img src="./img/content-v0.1/logo1.png" alt="Logo" class="modal__logo">
+        <h3 class="modal__title">Обратный звонок</h3>
+        <p class="modal__text">Оставьте свой номер, и мы перезвоним вам</p>
+
+        <form class="form form_modal js-form" data-action="https://jsonplaceholder.typicode.com/users">
+            <div class="form__box">
+                <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
+                    class="form__input js-form-input">
+            </div>
+            <div class="form__box">
+                <button class="btn js-form-btn">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Отправить</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="form__error">Это обязательное поле</div>
+        </form>
+
+        <p class="modal__policy">
+            Я ознакомился и согласен с <a href="/policy.pdf" target="_blank">политикой обработки персональных данных</a>
+        </p>
+    </div>
+</div>
+
+<div class="modal" id="book-first">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+        <img src="./img/content-v0.1/logo1.png" alt="Logo" class="modal__logo">
+        <h3 class="modal__title">Забронировать первым!</h3>
+        <p class="modal__text">Оставьте свой номер, и мы перезвоним вам</p>
+
+        <form class="form form_modal js-form" data-action="https://jsonplaceholder.typicode.com/users">
+            <div class="form__box">
+                <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
+                    class="form__input js-form-input">
+            </div>
+            <div class="form__box">
+                <button class="btn js-form-btn">
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Забронировать</span>
+                    <svg>
+                        <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="form__error">Это обязательное поле</div>
+        </form>
+
+        <p class="modal__policy">
+            Я ознакомился и согласен с <a href="/policy.pdf" target="_blank">политикой обработки персональных данных</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="modal modal_second" id="modal-second">
+    <div class="modal__wrap">
+        <div class="modal__img">
+            <img src="./img/mdl.png" alt="Car">
+        </div>
+        <div class="modal__inner">
+            <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+            <img src="./img/logo.png" alt="Logo" class="modal__logo">
+            <h3 class="modal__title">Получите предложение!</h3>
+            <p class="modal__text">Оставьте свой номер, и мы перезвоним вам</p>
+
+            <form class="form form_modal js-form" data-action="https://jsonplaceholder.typicode.com/users">
+                <div class="form__box">
+                    <input type="tel" name="phone" id="phone" placeholder="Введите номер телефона"
+                        class="form__input js-form-input">
+                </div>
+                <div class="form__box">
+                    <button class="btn js-form-btn">
+                        <div class="lds-ellipsis">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <span>Жду звонка</span>
+                    </button>
+                </div>
+                <div class="form__error">Это обязательное поле</div>
+            </form>
+
+            <p class="modal__policy">
+                Я ознакомился и согласен с <a href="/policy.pdf" target="_blank">политикой обработки персональных
+                    данных</a>
+            </p>
+            <p class="modal__policy">
+                © Обратный звонок Calltouch
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="success-modal">
+    <div class="modal__inner">
+        <button class="modal__close js-modal-close"><img src="./img/svg/close.svg" alt="Icon"></button>
+        <img src="./img/content-v0.1/logo1.png" alt="Logo" class="modal__logo">
+        <h3 class="modal__title">Спасибо за заявку!</h3>
+        <p class="modal__text">Ваш номер успешно отправлен, <br> мы перезвоним вам в ближайшее время</p>
+    </div>
+</div>
+
+<div class="success-error fadeIn js-success-error">
+    Произошла неизвестная ошибка 
+</div>
+<div class="modal-car" id="modal-design">
+    <div class="modal-car__inner">
+        <h4 class="modal-car__title">яркий дизайн</h4>
+        <div class="modal-car__slider js-modal-car__slider">
+            <div class="modal-car__slider-item">
+                <h2 class="modal-car__slider-title modal-car__slider-title_mobile">Спортивный стиль</h2>
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/design/1.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Спортивный стиль</h2>
+                <p class="modal-car__slider-text">
+                    Спортивный стиль LX подчеркивает эффектный динамичный силуэт и 
+                    яркие  элементы внешней отделки.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/design/2.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Светодиодная оптика</h2>
+                <p class="modal-car__slider-text">
+                    Все исполнения премиального  внедорожника оснащены полностью  светодиодной головной оптикой. С электрической регулировкой светового потока по высоте.
+                    По LED-технологии выполнены и
+                    интегрированные в блок-фару дневные  ходовые огни.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/design/3.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Большая панорамная крыша</h2>
+                <p class="modal-car__slider-text">
+                    Панорамная крыша подчеркивает ощущение пространства и  света. Площадь остекления составляет около 1 м2.
+                    Шторка крыши защищает от нагрева, затемняет салон.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/design/4.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Интересные детали и шины 19”</h2>
+                <p class="modal-car__slider-text">
+                    19” литые двухцветные диски, расширители колесных арок, эффектная решетка радиатора создают спортивный образ.
+                </p>
+            </div>
+        </div>
+        <div class="modal-car__bottom">
+            <button class="modal-car__nav js-modal-car-prev">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+            <div class="modal-car__page">
+                <span class="js-page-current">1</span>  
+                из 
+                <span class="js-page-count">2</span>
+            </div>
+            <button class="modal-car__nav js-modal-car-next">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-car" id="modal-comfort">
+    <div class="modal-car__inner">
+        <h4 class="modal-car__title">Стиль и комфорт</h4>
+        <div class="modal-car__slider js-modal-car__slider">
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/comfort/1.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Эргономика и пространство салона</h2>
+                <p class="modal-car__slider-text">
+                    Интерьер нового Exeed LX – та зона комфорта, из которой  точно не захочется выходить. Анатомические передние
+                    кресла с сервоприводами и функцией памяти на нескольких  водителей позволят мгновенно подобрать оптимальную
+                    посадку. Регулируемый по высоте и вылету руль буквально  ляжет в руки.
+                    Усиленная шумоизоляция отсека двигателя, акустическое  лобовое стекло и стекла передних дверей создают уютное  тихое пространство, а также поглощают до 99%  ультрафиолетовых лучей.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/comfort/2.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Функциональный багажник </h2>
+                <p class="modal-car__slider-text">
+                    Возможности трансформации салона и огромный багажник позволяют организовать  пространство так, как вам нужно для  конкретных целей.
+                    Бесключевой и бесконтактный доступ в багажник добавит комфорта при поездке в гипермаркет — не нужно освобождать руки,  занятые вещами, чтобы открыть багажник.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/comfort/3.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Большая панорамная крыша</h2>
+                <p class="modal-car__slider-text">
+                    Панорамная крыша подчеркивает ощущение пространства и  света. Площадь остекления составляет около 1 м2.
+                    Шторка крыши защищает от нагрева, затемняет салон.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/comfort/4.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Полный зимний пакет</h2>
+                <p class="modal-car__slider-text">
+                    LX поможет максимально  комфортно перенести любую  погоду. Отдельные дефлекторы для  2-го ряда создают  комфортную температуру в  салоне для задних  пассажиров. 
+                </p>
+            </div>
+        </div>
+        <div class="modal-car__bottom">
+            <button class="modal-car__nav js-modal-car-prev">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+            <div class="modal-car__page">
+                <span class="js-page-current">1</span>  
+                из 
+                <span class="js-page-count">2</span>
+            </div>
+            <button class="modal-car__nav js-modal-car-next">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-car" id="modal-safety">
+    <div class="modal-car__inner">
+        <h4 class="modal-car__title">Системы активной и пассивной безопасности</h4>
+        <div class="modal-car__slider js-modal-car__slider">
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/safety/1.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Усиленный каркас и оцинковка</h2>
+                <p class="modal-car__slider-text">
+                    Для безопасности людей в салоне, высокопрочный кузов имеет усиленный  каркас.
+                    При производстве автомобиля, был использован оцинкованный двусторонний стальной лист ~54% материала.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/safety/2.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">ESP Bosch 9.3 + TMPS</h2>
+                <p class="modal-car__slider-text">
+                    LX имеет новейшую систему ESP Bosch 9.3:
+                    <ul class="modal-car__slider-list">
+                        <li class="modal-car__slider-text">Высокопроизводительный четырехъядерный процессор</li>
+                        <li class="modal-car__slider-text">Новый цифровой датчик давления</li>
+                        <li class="modal-car__slider-text">Более высокая скорость активного сброса давления</li>
+                        <li class="modal-car__slider-text">Снижение уровня шума</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/safety/3.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">системы активной безопасности ADAS</h2>
+                <ul class="modal-car__slider-list">
+                    <li class="modal-car__slider-text">Система контроля слепых зон BSD</li>
+                    <li class="modal-car__slider-text">Система смены полосы движения LCA</li>
+                    <li class="modal-car__slider-text">Предупреждение о заднем перекрестном столкновении RCTW</li>
+                </ul>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/safety/4.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">система кругового обзора 360°</h2>
+                <p class="modal-car__slider-text">
+                    При совершении маневров в ограниченном пространстве несколько камер обеспечивают масштабируемый вид на автомобиль 
+                    сверху, позволяя Вам управлять автомобилем и парковаться уверенно и спокойно.
+                </p>
+            </div>
+
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/safety/5.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">система помощи при спуске</h2>
+                <p class="modal-car__slider-text">
+                    Дополнительную уверенность на бездорожье придадут системы помощи при 
+                    подъеме и спуске. Первая поможет тронуться с места, не откатившись назад. 
+                    Вторая возьмет на себя управление тормозами при движении под гору.
+                </p>
+            </div>
+        </div>
+        <div class="modal-car__bottom">
+            <button class="modal-car__nav js-modal-car-prev">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+            <div class="modal-car__page">
+                <span class="js-page-current">1</span>  
+                из 
+                <span class="js-page-count">2</span>
+            </div>
+            <button class="modal-car__nav js-modal-car-next">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-car" id="modal-dynamic">
+    <div class="modal-car__inner">
+        <h4 class="modal-car__title">Динамика</h4>
+        <div class="modal-car__slider js-modal-car__slider">
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/dynamic/1.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Модульная платформа T1X и шасси Benteler</h2>
+                <p class="modal-car__slider-text">
+                    Синергия основных элементов создает автомобиль с превосходными динамическими 
+                    характеристиками, отличной  геометрической проходимостью и уровнем комфорта.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/dynamic/2.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Двигатель 1.5TCI 147 л.с.</h2>
+                <p class="modal-car__slider-text">
+                    Двигатель 1.5T имеет мощность 147 л.с., что  соответствует мощности среднего атмосферного 
+                    бензинового двигателя ~ 2,0 л. (140 -150 л.с.). Расход топлива – один из лучших в классе.
+                    Максимальный крутящий момент 210 нм достигается в  диапазоне оборотов коленчатого вала 
+                    1750-4000 об/мин,  а не менее 80% от максимального его значения –   во  всём рабочем диапазоне двигателя 
+                    (от 1350 до «отсечки» на 6000 об/мин).  Расход топлива – один из лучших в классе.
+                </p>
+            </div>
+        </div>
+        <div class="modal-car__bottom">
+            <button class="modal-car__nav js-modal-car-prev">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+            <div class="modal-car__page">
+                <span class="js-page-current">1</span>  
+                из 
+                <span class="js-page-count">2</span>
+            </div>
+            <button class="modal-car__nav js-modal-car-next">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-car" id="modal-technology">
+    <div class="modal-car__inner">
+        <h4 class="modal-car__title">Современные технологии</h4>
+        <div class="modal-car__slider js-modal-car__slider">
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/technology/1.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Цифровая зона управления</h2>
+                <p class="modal-car__slider-text">
+                    Технологичный интерьер имеет множество  передовых элементов оснащения:
+                    2 экрана высокого разрешения 12.3”, они максимально информативны и эргономичны.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/technology/2.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Атмосферная многоцветная подсветка</h2>
+                <p class="modal-car__slider-text">
+                    Атмосферная многоцветная подсветка создает уют и комфортное настроение в салоне.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/technology/3.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Премиальная система Arkamys</h2>
+                <p class="modal-car__slider-text">
+                    Аудиосистема с  6 динамиками  в версии Luxury и 8 – в исполнении Prestige 
+                    объемным динамиками подарят новое качество звука Вашему любимому плейлисту.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/technology/4.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">2-зонный климат-контроль</h2>
+                <p class="modal-car__slider-text">
+                    Все исполнения премиального внедорожника EXEED LX оснащены фирменной системой контроля 
+                    качества воздуха (AQS). А подобрать его комфортную температуру поможет раздельный климат-контроль. 
+                    Для задних же пассажиров наши инженеры предусмотрели индивидуальные дефлекторы обдува.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/technology/5.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Беспроводная зарядка</h2>
+                <p class="modal-car__slider-text">
+                    Комфорт и технологии салона обеспечат приятную  поездку. Беспроводная зарядка практична, 
+                    подходит для  всех мобильных телефонов с функцией  беспроводной зарядки.
+                </p>
+            </div>
+            <div class="modal-car__slider-item">
+                <div class="modal-car__slider-img">
+                    <img src="./img/lx/modal/technology/6.jpg" alt="">
+                </div>
+                <h2 class="modal-car__slider-title">Система голосового управления</h2>
+                <p class="modal-car__slider-text">
+                    Мы  живем в прогрессивном мире. А автомобиль – наш второй дом. Было бы странно не сделать его «умным». 
+                    Нужно включить кондиционер или изменить распределение воздушных потоков? Выбрать другую радиостанцию или 
+                    запустить любимый трек? Открыть шторку панорамного люка или позвонить другу? Легче легкого! Просто скажите: «Привет, EXEED!». 
+                </p>
+            </div>
+        </div>
+        <div class="modal-car__bottom">
+            <button class="modal-car__nav js-modal-car-prev">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+            <div class="modal-car__page">
+                <span class="js-page-current">1</span>  
+                из 
+                <span class="js-page-count">2</span>
+            </div>
+            <button class="modal-car__nav js-modal-car-next">
+                <svg>
+                    <use xlink:href="./img/sprites/sprite.svg#arrow-lf"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+
